@@ -10,5 +10,10 @@ public class Suma extends Operacion {
 	public float operar() {
 		return this.getOperando1().operar() + this.getOperando2().operar();
 	}
+	
+	@Override
+	public String toString() {
+		return "(" + this.getOperando1().toString() + "+" + this.getOperando2().toString() + ")";
+	}
 
 }
