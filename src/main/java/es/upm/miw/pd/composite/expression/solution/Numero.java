@@ -20,5 +20,10 @@ public class Numero extends Expresion {
 	public float operar() {
 		return this.getValor();
 	}
+	
+	@Override
+	public String toString() {
+		return Integer.toString(this.getValor());
+	}
 
 }
