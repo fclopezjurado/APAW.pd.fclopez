@@ -1,5 +1,14 @@
 package es.upm.miw.pd.composite.expression.solution;
 
-public class Suma {
+public class Suma extends Operacion {
+
+	public Suma(Expresion operando1, Expresion operando2) {
+		super(operando1, operando2);
+	}
+
+	@Override
+	public float operar() {
+		return this.getOperando1().operar() + this.getOperando2().operar();
+	}
 
 }
