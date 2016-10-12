@@ -28,32 +28,32 @@ public class ExpressionTest {
 
     @Test
     public void testValor() {
-        assertEquals(4, this.exp1.operar());
+        assertEquals(4, this.exp1.operar(), 10e-5);
     }
 
     @Test
     public void TestSuma() {
-        assertEquals(6, this.exp2.operar());
+        assertEquals(6, this.exp2.operar(), 10e-5);
     }
 
     @Test
     public void testResta() {
-        assertEquals(1, this.exp3.operar());
+        assertEquals(1, this.exp3.operar(), 10e-5);
     }
 
     @Test
     public void testMultiplicacion() {
-        assertEquals(8, this.exp4.operar());
+        assertEquals(8, this.exp4.operar(), 10e-5);
     }
 
     @Test
     public void testDivision() {
-        assertEquals(1, this.exp5.operar());
+        assertEquals(1.3, this.exp5.operar(), 10e-1);
     }
 
     @Test
     public void testCompuesto() {
-        assertEquals(1, this.exp6.operar());
+        assertEquals(1, this.exp6.operar(), 10e-5);
     }
 
     @Test
