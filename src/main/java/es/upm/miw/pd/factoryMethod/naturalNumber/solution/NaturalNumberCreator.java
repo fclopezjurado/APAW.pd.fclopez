@@ -1,5 +1,5 @@
 package es.upm.miw.pd.factoryMethod.naturalNumber.solution;
 
-public class NaturalNumberCreator {
-
+public abstract class NaturalNumberCreator {
+	public abstract NaturalNumber createNaturalNumber();
 }
