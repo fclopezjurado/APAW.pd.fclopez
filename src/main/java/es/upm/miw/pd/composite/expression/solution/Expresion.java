@@ -1,5 +1,10 @@
 package es.upm.miw.pd.composite.expression.solution;
 
-public class Expresion {
+public abstract class Expresion {
+
+	public Expresion() {
+	}
+
+	public abstract float operar();
 
 }
