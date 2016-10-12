@@ -1,6 +1,8 @@
 package es.upm.miw.pd.state.connection.solution;
 
 public abstract class State {
+	
+	protected static final String UNSUPPORTED_OPERATION_EXCEPTION = "[UnsupportedOperationException]: Forbidden action";
 
 	public abstract void abrir(Conexion conexion);
 
