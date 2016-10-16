@@ -12,7 +12,7 @@ public class AddCommand extends GenericCommand {
 	@Override
 	public void execute() {
 		int number = IO.getIO().readInt();
-        this.getCalculator().add(number);
+		this.getCalculator().add(number);
 	}
 
 	@Override
