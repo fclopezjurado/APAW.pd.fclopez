@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FactoriaCaracter {
-	private final Map<String, Caracter> coleccionCaracteres = new HashMap<String, Caracter>();
+	private final Map<Character, Caracter> coleccionCaracteres = new HashMap<Character, Caracter>();
 	private static FactoriaCaracter factoriaCaracter = new FactoriaCaracter();
 
 	private FactoriaCaracter() {
@@ -15,7 +15,7 @@ public class FactoriaCaracter {
 		return FactoriaCaracter.factoriaCaracter;
 	}
 
-	public Caracter get(String key) {
+	public Caracter get(char key) {
 		if (this.coleccionCaracteres.containsKey(key))
 			return this.coleccionCaracteres.get(key);
 		else {
