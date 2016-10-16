@@ -3,12 +3,12 @@ package es.upm.miw.pd.command.calculator;
 import java.util.HashMap;
 import java.util.Map;
 
-import es.upm.miw.pd.command.calculator.solution.Comando;
+import es.upm.miw.pd.command.calculator.solution.Command;
 
 public class CommandManager {
-    private Map<String, Comando> comandos = new HashMap<>();
+    private Map<String, Command> comandos = new HashMap<>();
 
-    public void add(Comando comando) {
+    public void add(Command comando) {
         this.comandos.put(comando.name(), comando);
     }
 
