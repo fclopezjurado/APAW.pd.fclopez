@@ -1,17 +1,17 @@
 package es.upm.miw.pd.text.solution;
 
 public class Caracter extends Componente {
-	private String caracter;
+	private char caracter;
 
-	public Caracter(String caracter) {
+	public Caracter(char caracter) {
 		this.setCaracter(caracter);
 	}
 
-	public String getCaracter() {
+	public char getCaracter() {
 		return this.caracter;
 	}
 
-	public void setCaracter(String caracter) {
+	public void setCaracter(char caracter) {
 		this.caracter = caracter;
 	}
 
@@ -32,9 +32,9 @@ public class Caracter extends Componente {
 	@Override
 	public String dibujar(boolean enMayusculas) {
 		if (enMayusculas)
-			return this.getCaracter().toUpperCase();
+			return String.valueOf(Character.toUpperCase(this.getCaracter()));
 
-		return this.getCaracter();
+		return String.valueOf(this.getCaracter());
 	}
 
 }
