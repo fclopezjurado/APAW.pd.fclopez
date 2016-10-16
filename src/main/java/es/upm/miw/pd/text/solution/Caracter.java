@@ -31,6 +31,9 @@ public class Caracter extends Componente {
 
 	@Override
 	public String dibujar(boolean enMayusculas) {
+		if (enMayusculas)
+			return this.getCaracter().toUpperCase();
+		
 		return this.getCaracter();
 	}
 
