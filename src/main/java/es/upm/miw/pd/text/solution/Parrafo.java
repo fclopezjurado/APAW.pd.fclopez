@@ -1,7 +1,7 @@
 package es.upm.miw.pd.text.solution;
 
 public class Parrafo extends Capitulo {
-	
+
 	public Parrafo() {
 		super();
 	}
@@ -30,12 +30,12 @@ public class Parrafo extends Capitulo {
 	@Override
 	public String dibujar(boolean enMayusculas) {
 		String parrafo = new String();
-		
-		for (Componente componente: this.listaComponentes)
+
+		for (Componente componente : this.listaComponentes)
 			parrafo += componente.dibujar(enMayusculas);
-		
+
 		return parrafo + "\n";
-		
+
 	}
 
 }
